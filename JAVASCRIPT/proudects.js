@@ -1,7 +1,7 @@
 const API_PHONE =
   "https://my-json-server.typicode.com/Jeck99/fake-server/devices";
 
-async function someFunc() {
+async function phoneFunc() {
   try {
     return await fetch(API_PHONE).then((res) => res.json());
   } catch (error) {
@@ -9,8 +9,8 @@ async function someFunc() {
   } finally {
   }
 }
-someFunc().then((data) => rrrr(data));
-function rrrr(array) {
+phoneFunc().then((data) => printCards(data));
+function printCards(array) {
   array.forEach((element,i) => {
     document.getElementById(
       "product_main"
