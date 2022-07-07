@@ -1,0 +1,20 @@
+body{
+    margin: 0%;
+}
+#header {
+    background-color: #3b23ee; 
+}
+#logo{
+    color: #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* #menu_content{
+    margin-left: 3vw;
+} */
+#icon{color: #fff;}
+#main {
+    background-color: blanchedalmond;
+}
+#footer {
+    background-color:rgb(79, 42, 165); 
+}
