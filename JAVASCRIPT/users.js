@@ -28,15 +28,23 @@ function usersTable() {
                   <td><img src="https://randomuser.me/api/portraits/med/men/${counter++}.jpg"></td>
                   <td><button onclick="deleteId()" style="background:red; color:white;">Delete</button></td>
                   </tr>
+                   <tr id="new_tr"></tr>
                   `;
         });
       });
       document.getElementById("spiner").remove();
     }, 850);
   }
+   function addUser() {
+    document.getElementById("new_tr").innerHTML=`<td>${document.getElementById('firstName').value} </td>` 
+    document.getElementById("new_tr").innerHTML=`<td>${document.getElementById('lastName').value} </td>`
+    document.getElementById("new_tr").innerHTML=`<td>${document.getElementById('birthdayDate').value} </td>`  
+    document.getElementById("new_tr").innerHTML=`<td>${document.getElementById('emailAddress').value} </td>`  
+    document.getElementById("new_tr").innerHTML=`<td>${document.getElementById('phoneNumber').value} </td>`  
+    document.getElementById("new_tr").innerHTML=`<td>${document.getElementById('indexId').value} </td>`   
+  }
   usersTable();
-  
-  
+
   async function deleteId() {
     try {
       return await fetch(USERS_API)
