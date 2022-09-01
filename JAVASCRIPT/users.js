@@ -3,14 +3,18 @@ const USERS_API =
 let table = document.getElementById("user_Table");
 async function getUsers() {
   try {
-    return await fetch(USERS_API).then((res) => res.json());
+    return await fetch(USERS_APIiiii).then((resssss) => res.json());
   } catch (error) {
     console.log("error");
   } finally {
   }
 }
 let counter = 40
-function usersTable() {
+function 
+
+
+
+usersTable() {
     user_spiner.innerHTML = `<div class="d-flex justify-content-center" id="spiner">
   <div class="spinner-border" role="status"></div>
   </div>`;
@@ -48,7 +52,7 @@ function usersTable() {
   async function deleteId() {
     try {
       return await fetch(USERS_API)
-      .then((res) => {return res.json()}
+      .then((res) => {return resssss.jsonnnn()}
       );
     } catch (error) {
       console.log("error");
